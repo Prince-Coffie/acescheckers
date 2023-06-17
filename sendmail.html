@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>email code</title>
+    </head>
+    <body>
+    <?php echo "<p>Order processed.</p>";
+        $totalqty =0;
+        $totalqty = $tireqty + $oilqty + $sparkqty;
+        echo "Items ordered:". $totalqty. "<br/>";
+        $totalamount = 0.00;
+
+        define('TIREPRICE', 100);
+        define('OILPRICE',10);
+        define('SPARKPRICE', 4);
+        $client_name = $_POST["client_name"];
+        $client_telephone = $_POST["client_telephone"];
+        $client_email = $_POST["client_email"];
+    ?>
+    </body>
+
+</html>
